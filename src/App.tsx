@@ -3,6 +3,8 @@ import { AnimatePresence } from 'framer-motion';
 import Navbar from './Navbar';
 import Home from './pages/Home';
 import ProjectDetail from './pages/ProjectDetail';
+import About from './pages/About';
+import Footer from './components/Footer';
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -11,6 +13,7 @@ function AnimatedRoutes() {
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
         <Route path="/project/:id" element={<ProjectDetail />} />
       </Routes>
     </AnimatePresence>
@@ -25,6 +28,7 @@ export default function App() {
         <main className="pt-20">
           <AnimatedRoutes />
         </main>
+        <Footer />
       </div>
     </Router>
   );

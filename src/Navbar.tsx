@@ -16,9 +16,9 @@ export default function Navbar() {
             <Link to="/" className="text-neutral-400 hover:text-white transition-colors text-sm font-bold uppercase tracking-widest">
               Feed
             </Link>
-            <a href="#" className="text-neutral-400 hover:text-white transition-colors text-sm font-bold uppercase tracking-widest">
+            <Link to="/about" className="text-neutral-400 hover:text-white transition-colors text-sm font-bold uppercase tracking-widest">
               About
-            </a>
+            </Link>
             <a href="#" className="text-neutral-400 hover:text-white transition-colors text-sm font-bold uppercase tracking-widest">
               Contact
             </a>
